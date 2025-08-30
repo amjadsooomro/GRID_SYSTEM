@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Container Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .container {
+      display: flex;              /* activate flexbox */
+      flex-direction: row;        /* row | row-reverse | column | column-reverse */
+      justify-content: flex-start; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+      align-items: center;        /* stretch | flex-start | flex-end | center | baseline */
+      flex-wrap: wrap;            /* nowrap | wrap | wrap-reverse */
+      align-content: space-around; /* works when wrapping to multiple rows */
+      
+      background: #ddd;
+      padding: 20px;
+      min-height: 250px;
+      border-radius: 10px;
+      gap: 10px;
+    }
+
+    .item {
+      background: steelblue;
+      color: white;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      width: 120px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flexbox Container Properties</h1>
+
+  <h2>Example Container</h2>
+  <p>Edit the CSS of <code>.container</code> to try different values!</p>
+
+  <div class="container">
+    <div class="item">Box 1</div>
+    <div class="item">Box 2</div>
+    <div class="item">Box 3</div>
+    <div class="item">Box 4</div>
+    <div class="item">Box 5</div>
+    <div class="item">Box 6</div>
+  </div>
+
+</body>
+</html>
